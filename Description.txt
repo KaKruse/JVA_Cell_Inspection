@@ -1,0 +1,13 @@
+Random cell distribution process:
+Prerequirements:
+28 cells in a list
+10 days with 4 cell to inspect each (14 days where only week days count)
+
+1. Create a list with size 40 with random numbers from 0..27.
+2. Check if a number occures more than 10 times (10 slices and no cell should occure twice in a slice)
+2.1 Replace each cell that occures more then 10 times with a new random number between 0..27 till no cell occures more than 10 times.
+3. Check if numbers between 0 and 27 are not in the list of the 40 random numbers
+3.1 For each number which is not in the list replace one random number which is more than 1 time in the list with the new number.
+4. Put all 40 random numbers into 4 number slices and store them with a date
+4.1 For each slice check if it contains a number twice.
+4.1.1 Exchange a number which is contained tiwce in a slice with a number of the nearest slice not containing the number.
